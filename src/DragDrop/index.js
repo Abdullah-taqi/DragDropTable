@@ -128,7 +128,7 @@ const DragDrop = ({ setLength, data, setData }) => {
   }, [filteredData, data])
 
   useEffect(() => {
-    if (searchData  == prevSearchData){
+    if (searchData  === prevSearchData){
       setData(prevData);
     }
   }, [prevSearchData, searchData])
