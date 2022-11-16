@@ -112,11 +112,11 @@ const DragDrop = ({ setLength, data, setData }) => {
     else {
       setLength(filteredData.length)
     }
-    if (filteredData.length === 0 && data.length != 0) {
+    if (filteredData.length === 0 && data.length !== 0) {
       setPrevData(data);
       console.log("previous",prevData);
     }
-    if (filteredData.length != 0){
+    if (filteredData.length !== 0){
       setPrevSearchData(Value.length);
       console.log("prev flag",prevSearchData);
     }
